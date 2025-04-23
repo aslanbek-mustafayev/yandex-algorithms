@@ -1,6 +1,6 @@
 # DATES <br> Yandex Algorithm Training 2.0, Session 1 (Task C)
 
-This program determines whether a given date, written as three integers, can be uniquely interpreted without knowing if it is in European (day/month/year) or American (month/day/year) format.
+This program detects ambiguous date representations that could be interpreted as either European (day/month/year) or American (month/day/year) format. A date is ambiguous if both interpretations are valid.
 
 ## Specification
 

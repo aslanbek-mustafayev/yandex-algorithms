@@ -1,6 +1,6 @@
 # RING METRO LINE <br> Yandex Algorithm Training 2.0, Session 1 (Task B)
 
-This program calculates the minimal number of intermediate stations a passenger must pass through on a circular metro line to travel from a starting station to a destination station.
+This program calculates the minimal number of intermediate stations a passenger must pass through on a circular metro line. Stations are numbered consecutively (1 to N), and the shortest path can be clockwise or counter-clockwise.
 
 ## Specification
 

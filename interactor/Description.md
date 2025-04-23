@@ -1,6 +1,27 @@
 # INTERACTOR <br> Yandex Algorithm Training 2.0, Session 1 (Task A)
 
-This program determines the final system verdict for interactive programming problems by evaluating the exit code, interactor verdict, and checker verdict according to a fixed set of rules.
+This program determines the final system verdict for interactive programming problems by evaluating three inputs:
+
+- Exit code of the program
+- Verdict from the interactor module
+- Verdict from the checker module
+
+The decision follows strict rules to prioritize different verdict sources and handle edge cases like non-zero exit codes.
+
+**Decision Rules:**
+Final verdict is determined as follows:
+
+
+| Interactor Verdict (`i`) | Condition | Final Verdict |
+| :-- | :-- | :-- |
+| 0 | Exit code ≠ 0 | 3 |
+| 0 | Exit code = 0 | Checker verdict (`c`) |
+| 1 | Any | Checker verdict (`c`) |
+| 4 | Exit code ≠ 0 | 3 |
+| 4 | Exit code = 0 | 4 |
+| 6 | Any | 0 |
+| 7 | Any | 1 |
+| 2, 3, 5 | Any | Interactor verdict (`i`) |
 
 ## Specification
 
